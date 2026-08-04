@@ -38,7 +38,7 @@ TOP_P = 0.9
 TEMPERATURE = 0.3
 
 # TODO: Chọn LLM model (OpenRouter model ID)
-LLM_MODEL = "openai/gpt-4o-mini"  # hoặc model ":free" nếu chưa có credit
+LLM_MODEL = "openrouter/free"  # hoặc model ":free" nếu chưa có credit
 
 
 # =============================================================================
@@ -152,7 +152,7 @@ def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
     try:
         chunks = retrieve(query, top_k=top_k)
     except NotImplementedError:
-        raise
+        chunks = []
 
     if not chunks:
         return {
