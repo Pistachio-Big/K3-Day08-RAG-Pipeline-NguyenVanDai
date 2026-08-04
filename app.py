@@ -35,18 +35,26 @@ st.set_page_config(
 # =============================================================================
 
 with st.sidebar:
-    st.title("🎓 University Services RAG")
-    st.caption("Trợ lý hỏi đáp về dịch vụ và chính sách đại học (học phí, học bổng, ký túc xá, thư viện)")
+    st.title("🎓 University Services RAG Chatbot")
+    st.caption("Trợ lý hỏi đáp về dịch vụ và chính sách đại học (điểm chuẩn, tuyển sinh)")
 
     st.divider()
 
     st.subheader("💡 Câu hỏi gợi ý")
+    # suggestions = [
+    #     "Học phí tại RMIT Vietnam là bao nhiêu?",
+    #     "Làm sao để đặt phòng học nhóm ở thư viện?",
+    #     "Điều kiện xin học bổng Academic Achievement?",
+    #     "Dịch vụ hỗ trợ chỗ ở cho sinh viên như thế nào?",
+    #     "Cách đăng ký học phần qua myRMIT?",
+    # ]
+
     suggestions = [
-        "Học phí tại RMIT Vietnam là bao nhiêu?",
-        "Làm sao để đặt phòng học nhóm ở thư viện?",
-        "Điều kiện xin học bổng Academic Achievement?",
-        "Dịch vụ hỗ trợ chỗ ở cho sinh viên như thế nào?",
-        "Cách đăng ký học phần qua myRMIT?",
+        "Điểm chuẩn ngành Công nghệ thông tin năm 2025 là bao nhiêu?",
+        "Trường có những phương thức xét tuyển nào?",
+        "Điều kiện xét tuyển bằng chứng chỉ IELTS là gì?",
+        "Hồ sơ đăng ký xét tuyển gồm những giấy tờ nào?",
+        "Thời gian nhận hồ sơ và công bố kết quả tuyển sinh khi nào?",
     ]
     for s in suggestions:
         if st.button(s, use_container_width=True, key=f"sug_{s[:20]}"):
@@ -74,7 +82,7 @@ if "pending_query" not in st.session_state:
 # =============================================================================
 
 st.title("🎓 University Services RAG Chatbot")
-st.caption("Hệ thống hỏi đáp thông tin dịch vụ đại học (Học phí, Học bổng, Ký túc xá, Thư viện)")
+st.caption("Hệ thống hỏi đáp thông tin dịch vụ đại học (điểm chuẩn/tuyển sinh)")
 
 # Hiển thị lịch sử chat
 for msg in st.session_state.messages:
@@ -96,7 +104,7 @@ for msg in st.session_state.messages:
 # =============================================================================
 
 # Xử lý khi bấm nút gợi ý hoặc nhập câu hỏi mới
-user_input = st.chat_input("Nhập câu hỏi của bạn về chính sách/dịch vụ đại học...")
+user_input = st.chat_input("Nhập câu hỏi của bạn về điểm chuẩn/tuyển sinh vụ đại học...")
 query = user_input or st.session_state.pending_query
 
 if query:

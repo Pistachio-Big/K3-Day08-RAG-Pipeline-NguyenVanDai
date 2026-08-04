@@ -38,7 +38,7 @@ TOP_P = 0.9
 TEMPERATURE = 0.3
 
 # TODO: Chọn LLM model (OpenRouter model ID)
-LLM_MODEL = "openai/gpt-4o-mini"  # hoặc model ":free" nếu chưa có credit
+LLM_MODEL = "openrouter/free"  # hoặc model ":free" nếu chưa có credit
 
 
 # =============================================================================
