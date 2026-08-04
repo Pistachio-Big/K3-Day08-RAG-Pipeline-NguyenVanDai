@@ -22,84 +22,114 @@ có field "deprecation" cảnh báo) và trả kết quả trong "retrieved_node
 (json.dumps(...)) trước khi viết logic parse, đừng đoán schema từ ví dụ code cũ.
 """
 
+import json
 import os
+import time
 from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
 
 PAGEINDEX_API_KEY = os.getenv("PAGEINDEX_API_KEY", "")
-STANDARDIZED_DIR = Path(__file__).parent.parent / "data" / "standardized"
+LANDING_DIR = Path(__file__).parent.parent / "data" / "landing"
+DOC_IDS_FILE = Path(__file__).parent.parent / "pageindex_doc_ids.json"
 
 
-def upload_documents():
+def upload_documents() -> list[str]:
     """
-    Upload toàn bộ markdown documents lên PageIndex.
+    Upload toàn bộ PDF documents từ data/landing/legal/ lên PageIndex.
     """
-    # TODO: Implement upload
-    #
-    # Tham khảo: https://github.com/VectifyAI/PageIndex
-    #
-    # from pageindex.client import PageIndexClient
-    #
-    # client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
-    #
-    # for md_file in STANDARDIZED_DIR.rglob("*.md"):
-    #     # Lưu ý: PageIndex nhận PDF, không nhận .md trực tiếp — có thể cần
-    #     # convert markdown sang PDF đơn giản bằng fpdf2 trước khi upload.
-    #     resp = client.submit_document(str(pdf_path))
-    #     doc_id = resp.get("doc_id") or resp.get("id")
-    #     print(f"  ✓ Uploaded: {md_file.name} -> {doc_id}")
-    raise NotImplementedError("Implement upload_documents")
+    if not PAGEINDEX_API_KEY:
+        print("[WARNING] PAGEINDEX_API_KEY missing in .env")
+        return []
+
+    try:
+        from pageindex.client import PageIndexClient
+        client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
+    except Exception as e:
+        print(f"[ERROR] PageIndex import failed: {e}")
+        return []
+
+    doc_ids = []
+    legal_dir = LANDING_DIR / "legal"
+    if legal_dir.exists():
+        for pdf_file in legal_dir.glob("*.pdf"):
+            try:
+                resp = client.submit_document(str(pdf_file))
+                doc_id = resp.get("doc_id") or resp.get("id")
+                if doc_id:
+                    doc_ids.append(doc_id)
+                    print(f"  [OK] Uploaded: {pdf_file.name} -> {doc_id}")
+            except Exception as e:
+                print(f"  [ERROR] Upload {pdf_file.name}: {e}")
+
+    if doc_ids:
+        DOC_IDS_FILE.write_text(json.dumps(doc_ids, indent=2), encoding="utf-8")
+
+    return doc_ids
 
 
 def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
     """
-    Vectorless retrieval sử dụng PageIndex.
-    Dùng làm fallback khi hybrid search không có kết quả tốt.
-
-    Args:
-        query: Câu truy vấn
-        top_k: Số lượng kết quả tối đa
-
-    Returns:
-        List of {
-            'content': str,
-            'score': float,
-            'metadata': dict,
-            'source': 'pageindex'   # Đánh dấu nguồn retrieval
-        }
+    Vectorless retrieval sử dụng PageIndex làm fallback.
     """
-    # TODO: Implement PageIndex query
-    #
-    # from pageindex.client import PageIndexClient
-    #
-    # client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
-    # resp = client.submit_query(doc_id=doc_id, query=query)
-    # retrieval_id = resp.get("retrieval_id") or resp.get("id")
-    #
-    # # Poll cho đến khi status == "completed"
-    # retrieval = client.get_retrieval(retrieval_id)
-    #
-    # # Parse retrieval["retrieved_nodes"] — mỗi node có "relevant_contents"
-    # results = []
-    # for node in retrieval.get("retrieved_nodes", [])[:2]:
-    #     for group in node.get("relevant_contents", []):
-    #         for item in group:
-    #             results.append({
-    #                 "content": item.get("relevant_content", ""),
-    #                 "score": ...,  # PageIndex không trả score trực tiếp — tự gán theo rank
-    #                 "metadata": {"section": item.get("section_title")},
-    #                 "source": "pageindex",
-    #             })
-    # return results[:top_k]
-    raise NotImplementedError("Implement pageindex_search")
+    if not PAGEINDEX_API_KEY:
+        return []
+
+    try:
+        from pageindex.client import PageIndexClient
+        client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
+    except Exception:
+        return []
+
+    doc_ids = []
+    if DOC_IDS_FILE.exists():
+        try:
+            doc_ids = json.loads(DOC_IDS_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+
+    if not doc_ids:
+        doc_ids = upload_documents()
+
+    if not doc_ids:
+        return []
+
+    results = []
+    for doc_id in doc_ids[:2]:
+        try:
+            resp = client.submit_query(doc_id=doc_id, query=query)
+            retrieval_id = resp.get("retrieval_id") or resp.get("id")
+            if not retrieval_id:
+                continue
+
+            for _ in range(10):
+                retrieval = client.get_retrieval(retrieval_id)
+                if retrieval.get("status") == "completed":
+                    break
+                time.sleep(1)
+
+            rank = 1
+            for node in retrieval.get("retrieved_nodes", []):
+                for group in node.get("relevant_contents", []):
+                    for item in group:
+                        results.append({
+                            "content": item.get("relevant_content", ""),
+                            "score": float(1.0 / rank),
+                            "metadata": {"section": item.get("section_title", "N/A"), "doc_id": doc_id},
+                            "source": "pageindex",
+                        })
+                        rank += 1
+        except Exception as e:
+            print(f"  [ERROR] Querying PageIndex doc {doc_id}: {e}")
+
+    results = sorted(results, key=lambda x: x["score"], reverse=True)
+    return results[:top_k]
 
 
 if __name__ == "__main__":
     if not PAGEINDEX_API_KEY:
-        print("⚠ Hãy set PAGEINDEX_API_KEY trong file .env")
-        print("  Đăng ký tại: https://pageindex.ai/")
+        print("[INFO] PAGEINDEX_API_KEY not set in .env. Safe fallback enabled.")
     else:
         print("Uploading documents...")
         upload_documents()
