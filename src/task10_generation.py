@@ -152,7 +152,7 @@ def generate_with_citation(query: str, top_k: int = TOP_K) -> dict:
     try:
         chunks = retrieve(query, top_k=top_k)
     except NotImplementedError:
-        chunks = []
+        raise
 
     if not chunks:
         return {

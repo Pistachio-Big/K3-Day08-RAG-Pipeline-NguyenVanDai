@@ -52,18 +52,53 @@ async def crawl_article(url: str) -> dict:
             "content_markdown": str
         }
     """
-    from crawl4ai import AsyncWebCrawler
+    try:
+        from crawl4ai import AsyncWebCrawler
 
-    # TODO: Implement crawling logic
-    # async with AsyncWebCrawler() as crawler:
-    #     result = await crawler.arun(url=url)
-    #     return {
-    #         "url": url,
-    #         "title": result.metadata.get("title", "Unknown"),
-    #         "date_crawled": datetime.now().isoformat(),
-    #         "content_markdown": result.markdown,
-    #     }
-    raise NotImplementedError("Implement crawl_article")
+        async with AsyncWebCrawler(verbose=False) as crawler:
+            result = await crawler.arun(url=url)
+
+        title = "Unknown"
+        if getattr(result, "metadata", None):
+            title = result.metadata.get("title", "Unknown") or "Unknown"
+
+        content = getattr(result, "markdown", None) or ""
+        if not content and getattr(result, "raw_html", None):
+            content = result.raw_html
+
+        return {
+            "url": url,
+            "title": title,
+            "date_crawled": datetime.now().isoformat(),
+            "content_markdown": content or f"Không thể trích xuất nội dung từ: {url}",
+        }
+    except Exception:
+        import re
+        import urllib.request
+        from html import unescape
+
+        try:
+            with urllib.request.urlopen(url, timeout=20) as response:
+                html = response.read().decode("utf-8", errors="ignore")
+        except Exception:
+            html = ""
+
+        title_match = re.search(r"<title>(.*?)</title>", html, flags=re.IGNORECASE | re.DOTALL)
+        title = unescape(title_match.group(1)).strip() if title_match else "Unknown"
+
+        text = re.sub(r"<style.*?</style>", " ", html, flags=re.IGNORECASE | re.DOTALL)
+        text = re.sub(r"<script.*?</script>", " ", text, flags=re.IGNORECASE | re.DOTALL)
+        text = re.sub(r"<[^>]+>", "\n", text)
+        text = unescape(text)
+        text = re.sub(r"\s+", " ", text).strip()
+        content = text or f"Không thể trích xuất nội dung từ: {url}"
+
+        return {
+            "url": url,
+            "title": title,
+            "date_crawled": datetime.now().isoformat(),
+            "content_markdown": content,
+        }
 
 
 async def crawl_all():
@@ -72,12 +107,23 @@ async def crawl_all():
 
     for i, url in enumerate(ARTICLE_URLS, 1):
         print(f"[{i}/{len(ARTICLE_URLS)}] Crawling: {url}")
-        article = await crawl_article(url)
+        try:
+            article = await crawl_article(url)
+        except Exception as exc:
+            article = {
+                "url": url,
+                "title": "Unknown",
+                "date_crawled": datetime.now().isoformat(),
+                "content_markdown": f"Crawl failed: {exc}",
+            }
 
-        # Lưu file JSON
         filename = f"article_{i:02d}.json"
         filepath = DATA_DIR / filename
-        filepath.write_text(json.dumps(article, ensure_ascii=False, indent=2))
+        # filepath.write_text(json.dumps(article, ensure_ascii=False, indent=2))
+        filepath.write_text(
+            json.dumps(article, ensure_ascii=False, indent=2),
+            encoding="utf-8"
+        )
         print(f"  ✓ Saved: {filepath}")
 
 
