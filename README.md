@@ -8,6 +8,14 @@ sdk_version: "1.35.0"
 app_file: app.py
 pinned: false
 ---
+| Họ và tên | MSSV |
+|---|---|
+| Nguyễn Huy Anh | 2A202601641 |
+| Phạm Trung Kiên | 2A202601986 |
+| Nguyễn Văn Đại | 2A202601217 |
+| Hoàng Văn Phái | 2A202601575 |
+| Hà Tấn Phong | 2A202601577 |
+
 
 # Ngày 8 — RAG Pipeline v2
 
