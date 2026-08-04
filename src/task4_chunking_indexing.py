@@ -31,6 +31,8 @@ trong cùng collection, retrieval sẽ trả về kết quả rác từ dữ li�
 """
 
 from pathlib import Path
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from sentence_transformers import SentenceTransformer
 
 STANDARDIZED_DIR = Path(__file__).parent.parent / "data" / "standardized"
 CHROMA_DIR = Path(__file__).parent.parent / "chroma_db"
@@ -41,17 +43,18 @@ CHROMA_DIR = Path(__file__).parent.parent / "chroma_db"
 # =============================================================================
 
 # TODO: Chọn chunking strategy và giải thích vì sao
-CHUNK_SIZE = 500        # Vì sao chọn 500? ...
-CHUNK_OVERLAP = 50      # Vì sao chọn 50? ...
+CHUNK_SIZE = 500        # 500 ký tự/chunk giúp cân bằng giữa độ đầy đủ ngữ cảnh và tốc độ truy vấn.
+CHUNK_OVERLAP = 50      # Giữ khoảng 10% nội dung giữa hai chunk để tránh mất thông tin ở ranh giới.
 CHUNKING_METHOD = "recursive"  # "recursive" | "markdown_header" | "semantic"
 
+
 # TODO: Chọn embedding model và giải thích
-EMBEDDING_MODEL = "BAAI/bge-m3"  # Vì sao? Multilingual, tốt cho tiếng Việt lẫn tiếng Anh
+EMBEDDING_MODEL = "BAAI/bge-m3"  # bge-m3 hỗ trợ đa ngôn ngữ, đặc biệt tiếng Việt và tiếng Anh, chất lượng retrieval cao.
 EMBEDDING_DIM = 1024
 
 # TODO: Chọn vector store
-VECTOR_STORE = "chromadb"  # "chromadb" | "weaviate" | "faiss"
-COLLECTION_NAME = "university_services_docs"
+VECTOR_STORE = "chromadb"  # ChromaDB là vector database local, persistent, không cần Docker và dễ tích hợp với LangChain.
+COLLECTION_NAME = "admission_scores_docs"
 
 
 # =============================================================================
@@ -75,7 +78,28 @@ def load_documents() -> list[dict]:
     #         "metadata": {"source": md_file.name, "type": doc_type}
     #     })
     # return documents
-    raise NotImplementedError("Implement load_documents")
+
+    documents = []
+
+    for md_file in STANDARDIZED_DIR.rglob("*.md"):
+        content = md_file.read_text(encoding="utf-8")
+
+        doc_type = "legal"
+        if "news" in str(md_file).lower():
+            doc_type = "news"
+
+        documents.append(
+            {
+                "content": content,
+                "metadata": {
+                    "source": md_file.name,
+                    "type": doc_type,
+                },
+            }
+        )
+
+    return documents
+
 
 
 def chunk_documents(documents: list[dict]) -> list[dict]:
@@ -104,7 +128,38 @@ def chunk_documents(documents: list[dict]) -> list[dict]:
     #             "metadata": {**doc["metadata"], "chunk_index": i}
     #         })
     # return chunks
-    raise NotImplementedError("Implement chunk_documents")
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
+        separators=[
+            "\n\n",
+            "\n",
+            ". ",
+            " ",
+            "",
+        ],
+    )
+
+    chunks = []
+
+    for doc in documents:
+
+        splits = splitter.split_text(doc["content"])
+
+        for idx, text in enumerate(splits):
+
+            chunks.append(
+                {
+                    "content": text,
+                    "metadata": {
+                        **doc["metadata"],
+                        "chunk_index": idx,
+                    },
+                }
+            )
+
+    return chunks
+
 
 
 def embed_chunks(chunks: list[dict]) -> list[dict]:
@@ -125,8 +180,22 @@ def embed_chunks(chunks: list[dict]) -> list[dict]:
     # for chunk, emb in zip(chunks, embeddings):
     #     chunk["embedding"] = emb.tolist()
     # return chunks
-    raise NotImplementedError("Implement embed_chunks")
+    model = SentenceTransformer(EMBEDDING_MODEL)
 
+    texts = [c["content"] for c in chunks]
+
+    embeddings = model.encode(
+        texts,
+        show_progress_bar=True,
+        normalize_embeddings=True,
+    )
+
+    for chunk, emb in zip(chunks, embeddings):
+        chunk["embedding"] = emb.tolist()
+
+    return chunks
+
+import chromadb
 
 def index_to_vectorstore(chunks: list[dict]):
     """
@@ -151,8 +220,30 @@ def index_to_vectorstore(chunks: list[dict]):
     #     embeddings=[c["embedding"] for c in chunks],
     #     metadatas=[c["metadata"] for c in chunks],
     # )
-    raise NotImplementedError("Implement index_to_vectorstore")
+    CHROMA_DIR.mkdir(parents=True, exist_ok=True)
 
+    client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+
+    collection = client.get_or_create_collection(
+        name=COLLECTION_NAME,
+        metadata={
+            "hnsw:space": "cosine",
+        },
+    )
+
+    ids = [
+        f"{c['metadata']['source']}_{c['metadata']['chunk_index']}"
+        for c in chunks
+    ]
+
+    collection.upsert(
+        ids=ids,
+        documents=[c["content"] for c in chunks],
+        embeddings=[c["embedding"] for c in chunks],
+        metadatas=[c["metadata"] for c in chunks],
+    )
+
+    print(f"Indexed {len(chunks)} chunks.")
 
 def run_pipeline():
     """Chạy toàn bộ pipeline: load → chunk → embed → index."""
