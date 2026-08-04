@@ -3454,3 +3454,4 @@ sơ gửi cơ quan có thẩm quyền xem xét truy cứu trách nhiệm hình s
 với các trường hợp vi phạm khác, tùy theo tính chất và mức độ vi phạm sẽ xử lý kỷ luật
 
 theo các hình thức đã quy định tại Điều này./.
+

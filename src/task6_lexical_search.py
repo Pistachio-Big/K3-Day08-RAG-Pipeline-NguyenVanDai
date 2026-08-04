@@ -16,27 +16,59 @@ BM25 hoạt động thế nào:
 """
 
 from pathlib import Path
+import numpy as np
+from rank_bm25 import BM25Okapi
 
-# TODO: Load corpus từ data/standardized/ hoặc từ vector store
+STANDARDIZED_DIR = Path(__file__).parent.parent / "data" / "standardized"
+
 CORPUS: list[dict] = []  # List of {'content': str, 'metadata': dict}
+_BM25_INDEX = None
 
 
-def build_bm25_index(corpus: list[dict]):
+def load_corpus() -> list[dict]:
+    """
+    Load toàn bộ markdown documents từ data/standardized/ và tách thành các chunks.
+    """
+    global CORPUS
+    if CORPUS:
+        return CORPUS
+
+    corpus = []
+    for md_file in STANDARDIZED_DIR.rglob("*.md"):
+        content = md_file.read_text(encoding="utf-8")
+        doc_type = "legal" if "legal" in str(md_file) else "news"
+
+        # Tách nhỏ file theo paragraph để làm chunk BM25
+        paragraphs = [p.strip() for p in content.split("\n\n") if p.strip()]
+        for idx, p in enumerate(paragraphs):
+            corpus.append({
+                "content": p,
+                "metadata": {
+                    "source": md_file.name,
+                    "type": doc_type,
+                    "chunk_id": idx
+                }
+            })
+
+    CORPUS = corpus
+    return CORPUS
+
+
+def build_bm25_index(corpus: list[dict] = None):
     """
     Xây dựng BM25 index từ corpus.
 
     Args:
         corpus: List of {'content': str, 'metadata': dict}
     """
-    # TODO: Implement BM25 index
-    #
-    # from rank_bm25 import BM25Okapi
-    #
-    # # Tokenize - có thể đơn giản split(), hoặc dùng underthesea cho tiếng Việt
-    # tokenized_corpus = [doc["content"].lower().split() for doc in corpus]
-    # bm25 = BM25Okapi(tokenized_corpus)
-    # return bm25
-    raise NotImplementedError("Implement build_bm25_index")
+    global _BM25_INDEX, CORPUS
+    if corpus is None:
+        corpus = load_corpus()
+
+    CORPUS = corpus
+    tokenized_corpus = [doc["content"].lower().split() for doc in corpus]
+    _BM25_INDEX = BM25Okapi(tokenized_corpus)
+    return _BM25_INDEX
 
 
 def lexical_search(query: str, top_k: int = 10) -> list[dict]:
@@ -55,29 +87,36 @@ def lexical_search(query: str, top_k: int = 10) -> list[dict]:
         }
         Sorted by score descending.
     """
-    # TODO: Implement lexical search
-    #
-    # tokenized_query = query.lower().split()
-    # scores = bm25.get_scores(tokenized_query)
-    #
-    # # Get top_k indices
-    # import numpy as np
-    # top_indices = np.argsort(scores)[::-1][:top_k]
-    #
-    # results = []
-    # for idx in top_indices:
-    #     if scores[idx] > 0:
-    #         results.append({
-    #             "content": CORPUS[idx]["content"],
-    #             "score": float(scores[idx]),
-    #             "metadata": CORPUS[idx]["metadata"]
-    #         })
-    # return results
-    raise NotImplementedError("Implement lexical_search")
+    global _BM25_INDEX, CORPUS
+    if _BM25_INDEX is None or not CORPUS:
+        load_corpus()
+        build_bm25_index(CORPUS)
+
+    if not CORPUS or _BM25_INDEX is None:
+        return []
+
+    tokenized_query = query.lower().split()
+    scores = _BM25_INDEX.get_scores(tokenized_query)
+
+    top_indices = np.argsort(scores)[::-1][:top_k]
+
+    results = []
+    for idx in top_indices:
+        if scores[idx] > 0:
+            results.append({
+                "content": CORPUS[idx]["content"],
+                "score": float(scores[idx]),
+                "metadata": CORPUS[idx]["metadata"]
+            })
+    return results
 
 
 if __name__ == "__main__":
-    # Test
-    results = lexical_search("tuition fee payment methods", top_k=5)
+    print("Building BM25 index...")
+    load_corpus()
+    build_bm25_index()
+    results = lexical_search("học phí", top_k=5)
+    print(f"Found {len(results)} results:")
     for r in results:
-        print(f"[{r['score']:.3f}] {r['content'][:100]}...")
+        safe_content = r['content'][:100].replace('\n', ' ')
+        print(f"[{r['score']:.3f}] Source: {r['metadata']['source']} | {safe_content}".encode("ascii", "replace").decode("ascii"))
