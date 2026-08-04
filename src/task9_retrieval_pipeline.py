@@ -110,10 +110,16 @@ def retrieve(
 
 
 if __name__ == "__main__":
+    import sys
+
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+
     test_queries = [
-        "What is the tuition fee at RMIT Vietnam?",
-        "How do I book a library study room?",
-        "What scholarships are available for international students?",
+        "Học phí năm 2026 của Đại học Bách khoa Hà Nội là bao nhiêu?",
+        "Điều kiện xét học bổng cho sinh viên là gì?",
+        "Quy định ký túc xá của Đại học Y Dược Cần Thơ như thế nào?",
+        "Điều kiện xét tuyển đại học năm 2026 gồm những gì?",
         "xyzabc123nonsense",  # Query không có kết quả → test fallback
     ]
 
