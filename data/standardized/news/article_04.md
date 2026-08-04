@@ -1,0 +1,107 @@
+# Điểm chuẩn Trường Đại học Khoa học Tự nhiên (HUS), ĐHQG Hà Nội năm 2025
+
+**Source:** https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-khoa-hoc-tu-nhien-hus-dhqg-ha-noi-nam-2925-119250822173424001.htm
+**Crawled:** 2026-08-04T12:14:23.869056
+
+---
+
+Báo điện tử chính phủ
+Xây dựng chính sách, pháp luật
+Diễn đàn của nhân dân, doanh nghiệp về xây dựng, thực thi chính sách, pháp luật
+Chính sách mới
+Tham vấn chính sách
+Người dân góp ý
+Doanh nghiệp hiến kế
+Chính sách và cuộc sống
+Hướng dẫn thực hiện chính sách
+Phát triển kinh tế tư nhân và doanh nghiệp dân tộc
+Ocop và chuỗi giá trị Nông sản
+Kinh tế tư nhân
+Doanh nghiệp dân tộc
+Gửi thông tin góp ý hiến kế
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi tổng đài
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi đến
+0964 96 66 88
+tổng đài tiếp nhận các góp ý, đề xuất, hiến kế
+Hoặc
+Đóng
+Gửi thông tin góp ý hiến kế
+Điểm chuẩn Trường Đại học Khoa học Tự nhiên (HUS), ĐHQG Hà Nội năm 2025
+(Chinhphu.vn) - Trường Đại học Khoa học Tự nhiên, ĐHQG Hà Nội thông báo điểm trúng tuyển quy về thang điểm 30 vào các ngành đào tạo đại học chính quy năm 2025.
+Gọi tổng đài
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi đến
+0964 96 66 88
+tổng đài tiếp nhận các góp ý, đề xuất, hiến kế
+Hoặc
+Đóng
+Chính sách và cuộc sống
+Điểm chuẩn Trường Đại học Khoa học Tự nhiên (HUS), ĐHQG Hà Nội năm 2025
+25/08/2025 10:35
+Chia sẻ
+(Chinhphu.vn) - Trường Đại học Khoa học Tự nhiên, ĐHQG Hà Nội thông báo điểm trúng tuyển quy về thang điểm 30 vào các ngành đào tạo đại học chính quy năm 2025.
+Điểm chuẩn Trường Đại học Khoa học Tự nhiên
+Phương thức xét tuyển:
+- 100: Xét kết quả thi tốt nghiệp trung học phổ thông (THPT).
+- 401: Thi đánh giá năng lực của Đại học Quốc gia Hà Nội (HSA).
+- 415: Sử dụng chứng chỉ quốc tế SAT để xét tuyển.
+- 409: Kết hợp kết quả thi tốt nghiệp THPT với chứng chỉ quốc tế để xét tuyển.
+- 500: Sử dụng phương thức khác.
+Thí sinh bắt buộc phải thực hiện xác nhận nhập học trực tuyến trên hệ thống tuyển sinh của Bộ Giáo dục và Đào tạo theo quy định (trước 17 giờ 00 thứ bảy, ngày 30/8/2025).
+Thí sinh cần chuẩn bị hồ sơ; nộp hồ sơ trực tuyến (trước 17 giờ ngày 28/8/2025) và nộp hồ sơ trực tiếp (trong ngày 27-28/8/2025) tại Trường Đại học Khoa học Khoa học Tự nhiên (theo thông báo Hướng dẫn nhập học sẽ được cập nhật tiếp theo).
+Tham khảo thêm
+ĐIỂM CHUẨN Trường Đại học Khoa học Tự nhiên (HUS), ĐHQG Hà Nội 2024
+Tham khảo thêm
+Điểm chuẩn Trường Đại học Khoa học Tự nhiên, ĐHQG TPHCM 2023
+Nội dung này, đã nhận được
+0
+góp ý, hiến kế
+Góp ý, hiến kế cho Chính phủ ngay tại đây
+Gọi tổng đài
+Góp ý qua Zalo
+Gửi góp ý trực tiếp
+Đọc nhiều
+Tra cứu ĐIỂM THI TỐT NGHIỆP THPT; PHỔ ĐIỂM; các mốc THỜI GIAN TUYỂN SINH ĐẠI HỌC 2026
+(Chinhphu.vn) - TRA CỨU ĐIỂM THI TỐT NGHIỆP THPT năm 2026 trên Báo điện tử Chính phủ, Cổng TTĐT Chính phủ từ 8h00 ngày 1/7. Tra cứu PHỔ ĐIỂM KỲ THI TỐT NGHỆP THPT năm 2026.
+Chi tiết PHỔ ĐIỂM KỲ THI TỐT NGHIỆP THPT 2026
+(Chinhphu.vn) - Bộ Giáo dục và Đào tạo chính thức công bố phổ điểm Kỳ thi tốt nghiệp THPT năm 2026.
+QUY ĐỊNH MỚI về TIỀN LƯƠNG, LƯƠNG HƯU, TRỢ CẤP, PHỤ CẤP có hiệu lực từ tháng 7/2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Từ tháng 7/2026, nhiều quy định mới về tiền lương, lương hưu, trợ cấp, phụ cấp, chính sách xã hội chính thức có hiệu lực, được người dân mong chờ.
+BÁCH PHÂN VỊ các TỔ HỢP A00, A01, B00, C00, D01, Kỳ thi tốt nghiệp THPT 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Bách phân vị một số tổ hợp môn A00, A01, B00, C00, D01, Kỳ thi tốt nghiệp THPT năm 2026.
+TOÀN VĂN: Nghị quyết 57-NQ/TW về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia
+Chính sách và cuộc sống
+(Chinhphu.vn) - Tổng Bí thư Tô Lâm đã ký ban hành Nghị quyết số 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia. Cổng TTĐT Chính phủ trân trọng giới thiệu toàn văn Nghị quyết.
+Chúng tôi
+luôn
+Lắng nghe
+và phản hồi
+Người dân và Doanh nghiệp, ngay bây giờ có có thể thực hiện góp ý và hiến kế cho Chính Phủ bằng các phương thức dưới đây
+Gọi tổng đài
+Góp ý qua Zalo
+Gửi góp ý trực tiếp
+Chính sách mới
+Tham vấn chính sách
+Người dân góp ý
+Doanh nghiệp hiến kế
+Chính sách và cuộc sống
+Hướng dẫn thực hiện chính sách
+Phát triển kinh tế tư nhân và doanh nghiệp dân tộc
+Ocop và chuỗi giá trị Nông sản
+Kinh tế tư nhân
+Doanh nghiệp dân tộc
+Lấy ý kiến nhân dân dự thảo VBQPPL
+© BÁO ĐIỆN TỬ CHÍNH PHỦ
+Tổng Biên tập:
+Nguyễn Hồng Sâm
+Theo dõi trên:
+Giấy phép số: 19/GP-CBC, cấp ngày 10/5/2024.
+Trụ sở: 16 Lê Hồng Phong - Ba Đình - Hà Nội.
+Điện thoại: 080 43162; Fax: 080.48924;
+Email: thongtinchinhphu@chinhphu.vn.
+Bản quyền thuộc Báo Điện tử Chính phủ - Cổng Thông tin điện tử Chính phủ.
+Ghi rõ nguồn "Báo Điện tử Chính phủ", "Cổng Thông tin điện tử Chính phủ", hoặc www.baochinhphu.vn, www.chinhphu.vn khi phát hành lại thông tin từ các nguồn này.

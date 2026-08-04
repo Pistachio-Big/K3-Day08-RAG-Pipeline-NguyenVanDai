@@ -1,0 +1,115 @@
+# Điểm chuẩn Trường Đại học Ngoại thương (FTU) năm 2025
+
+**Source:** https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-ngoai-thuong-ftu-nam-2025-119250823073938701.htm
+**Crawled:** 2026-08-04T12:14:24.217171
+
+---
+
+Báo điện tử chính phủ
+Xây dựng chính sách, pháp luật
+Diễn đàn của nhân dân, doanh nghiệp về xây dựng, thực thi chính sách, pháp luật
+Chính sách mới
+Tham vấn chính sách
+Người dân góp ý
+Doanh nghiệp hiến kế
+Chính sách và cuộc sống
+Hướng dẫn thực hiện chính sách
+Phát triển kinh tế tư nhân và doanh nghiệp dân tộc
+Ocop và chuỗi giá trị Nông sản
+Kinh tế tư nhân
+Doanh nghiệp dân tộc
+Gửi thông tin góp ý hiến kế
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi tổng đài
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi đến
+0964 96 66 88
+tổng đài tiếp nhận các góp ý, đề xuất, hiến kế
+Hoặc
+Đóng
+Gửi thông tin góp ý hiến kế
+Điểm chuẩn Trường Đại học Ngoại thương (FTU) năm 2025
+(Chinhphu.vn) - Trường Đại học Ngoại thương (FTU) công bố ngưỡng điểm trúng tuyển (điểm chuẩn) Đại học chính quy năm 2025.
+Gọi tổng đài
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi đến
+0964 96 66 88
+tổng đài tiếp nhận các góp ý, đề xuất, hiến kế
+Hoặc
+Đóng
+Chính sách và cuộc sống
+Điểm chuẩn Trường Đại học Ngoại thương (FTU) năm 2025
+26/08/2025 07:48
+Chia sẻ
+(Chinhphu.vn) - Trường Đại học Ngoại thương (FTU) công bố ngưỡng điểm trúng tuyển (điểm chuẩn) Đại học chính quy năm 2025.
+Trường Đại học Ngoại Thương công bố điểm trúng tuyển theo đó các chương trình trúng tuyển có điểm trên 28 điểm bao gồm chương trình tiên tiến kinh tế đối ngoại với điểm trúng tuyển là 28,5, chương trình tiên tiến i-Hons Kinh doanh quốc tế và Phân tích dữ liệu kinh doanh và chương trình tiêu chuẩn Kinh doanh quốc tế đều có ngưỡng điểm trúng tuyển là 28.
+Tiếp đến là 6 chương trình có điểm trúng tuyển trên 27 điểm bao gồm chương trình định hướng nghề nghiệp Logistics và Quản lý chuỗi cung ứng, chương trình tiêu chuẩn Kinh tế đối ngoại, chương trình chất lượng cao kinh tế đối ngoại, chương trình chất lượng cao kinh doanh quốc tế, chương trình Marketing số, chương trình tiên tiến Tài chính – Ngân hàng.
+Riêng ngành Khoa học máy tính có điểm trúng tuyển là 36,4 điểm với hệ số nhân đôi cho môn Toán (tương đương trên 9 điểm 1 môn).
+Các chương trình còn lại về cơ bản có ngưỡng điểm trúng tuyển tập trung vào khoảng từ 25 đến 27 điểm.
+Điểm chuẩn trúng tuyển đại học của các chương trình tiên tiến và chất lượng cao
+Điểm chuẩn trúng tuyển đại học chính quy của các chương trình tiêu chuẩn
+Điểm chuẩn trúng tuyển đại học chính quy của chương trình khoa học máy tính và dữ liệu trong kinh tế và kinh doanh
+Điểm chuẩn trúng tuyển đại học chính quy của các chương trình định hướng nghề nghiệp và phát triển quốc tế
+Điểm chuẩn trúng tuyển đại học chính quy của các chương trình ngôn ngữ thương mại
+Để tra cứu kết quả tuyển sinh, thí sinh làm theo các bước sau:
+B1: Truy cập
+http://tuyensinh.ftu.edu.vn
+B2: Bấm vào thanh Tra cứu kết quả xét tuyển hiện trên màn hình và nhập số CCCD
+Lưu ý: Thí sinh chỉ có thể tra kết quả bằng số CCCD đã đăng ký trên hệ thống xét tuyển của nhà trường.
+Tham khảo thêm
+ĐIỂM CHUẨN Trường Đại học Ngoại thương (FTU) 2024
+Tham khảo thêm
+TUYỂN SINH 2024: Chỉ tiêu, phương thức xét tuyển của Trường Đại học Ngoại thương
+Tham khảo thêm
+Điểm chuẩn Trường ĐẠI HỌC NGOẠI THƯƠNG 2023
+Nội dung này, đã nhận được
+0
+góp ý, hiến kế
+Góp ý, hiến kế cho Chính phủ ngay tại đây
+Gọi tổng đài
+Góp ý qua Zalo
+Gửi góp ý trực tiếp
+Đọc nhiều
+Tra cứu ĐIỂM THI TỐT NGHIỆP THPT; PHỔ ĐIỂM; các mốc THỜI GIAN TUYỂN SINH ĐẠI HỌC 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - TRA CỨU ĐIỂM THI TỐT NGHIỆP THPT năm 2026 trên Báo điện tử Chính phủ, Cổng TTĐT Chính phủ từ 8h00 ngày 1/7. Tra cứu PHỔ ĐIỂM KỲ THI TỐT NGHỆP THPT năm 2026.
+Chi tiết PHỔ ĐIỂM KỲ THI TỐT NGHIỆP THPT 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Bộ Giáo dục và Đào tạo chính thức công bố phổ điểm Kỳ thi tốt nghiệp THPT năm 2026.
+QUY ĐỊNH MỚI về TIỀN LƯƠNG, LƯƠNG HƯU, TRỢ CẤP, PHỤ CẤP có hiệu lực từ tháng 7/2026
+(Chinhphu.vn) - Từ tháng 7/2026, nhiều quy định mới về tiền lương, lương hưu, trợ cấp, phụ cấp, chính sách xã hội chính thức có hiệu lực, được người dân mong chờ.
+BÁCH PHÂN VỊ các TỔ HỢP A00, A01, B00, C00, D01, Kỳ thi tốt nghiệp THPT 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Bách phân vị một số tổ hợp môn A00, A01, B00, C00, D01, Kỳ thi tốt nghiệp THPT năm 2026.
+TOÀN VĂN: Nghị quyết 57-NQ/TW về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia
+Chính sách và cuộc sống
+(Chinhphu.vn) - Tổng Bí thư Tô Lâm đã ký ban hành Nghị quyết số 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia. Cổng TTĐT Chính phủ trân trọng giới thiệu toàn văn Nghị quyết.
+Chúng tôi
+luôn
+Lắng nghe
+và phản hồi
+Người dân và Doanh nghiệp, ngay bây giờ có có thể thực hiện góp ý và hiến kế cho Chính Phủ bằng các phương thức dưới đây
+Gọi tổng đài
+Góp ý qua Zalo
+Gửi góp ý trực tiếp
+Chính sách mới
+Tham vấn chính sách
+Người dân góp ý
+Doanh nghiệp hiến kế
+Chính sách và cuộc sống
+Hướng dẫn thực hiện chính sách
+Phát triển kinh tế tư nhân và doanh nghiệp dân tộc
+Ocop và chuỗi giá trị Nông sản
+Kinh tế tư nhân
+Doanh nghiệp dân tộc
+Lấy ý kiến nhân dân dự thảo VBQPPL
+© BÁO ĐIỆN TỬ CHÍNH PHỦ
+Tổng Biên tập:
+Nguyễn Hồng Sâm
+Theo dõi trên:
+Giấy phép số: 19/GP-CBC, cấp ngày 10/5/2024.
+Trụ sở: 16 Lê Hồng Phong - Ba Đình - Hà Nội.
+Điện thoại: 080 43162; Fax: 080.48924;
+Email: thongtinchinhphu@chinhphu.vn.
+Bản quyền thuộc Báo Điện tử Chính phủ - Cổng Thông tin điện tử Chính phủ.
+Ghi rõ nguồn "Báo Điện tử Chính phủ", "Cổng Thông tin điện tử Chính phủ", hoặc www.baochinhphu.vn, www.chinhphu.vn khi phát hành lại thông tin từ các nguồn này.
