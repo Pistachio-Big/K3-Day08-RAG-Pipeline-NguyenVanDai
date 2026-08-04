@@ -108,4 +108,19 @@ if question:
             st.markdown(answer)
             render_sources(sources)
 
-    st.session_state.messages.append({"role": "assistant", "content": answer, "sources": sources})
+            if sources:
+                with st.expander(f"📚 Nguồn tham khảo ({len(sources)} chunks)"):
+                    for i, src in enumerate(sources, 1):
+                        meta = src.get("metadata", {})
+                        source_name = meta.get("source", "Unknown")
+                        doc_type = meta.get("type", "unknown")
+                        score = src.get("score", 0)
+                        st.markdown(f"**[{i}] {source_name}** `{doc_type}` | score: `{score:.4f}`")
+                        st.text(src.get("content", "")[:300] + "...")
+                        st.divider()
+
+    st.session_state.messages.append({
+        "role": "assistant",
+        "content": answer,
+        "sources": sources,
+    })

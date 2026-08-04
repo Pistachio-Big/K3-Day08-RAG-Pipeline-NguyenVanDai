@@ -44,7 +44,8 @@ def upload_documents() -> list[str]:
         return []
 
     try:
-        from pageindex.client import PageIndexClient
+        # PageIndex SDK >= 0.2 exports the client at package level.
+        from pageindex import PageIndexClient
         client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
     except Exception as e:
         print(f"[ERROR] PageIndex import failed: {e}")
@@ -77,7 +78,8 @@ def pageindex_search(query: str, top_k: int = 5) -> list[dict]:
         return []
 
     try:
-        from pageindex.client import PageIndexClient
+        # PageIndex SDK >= 0.2 exports the client at package level.
+        from pageindex import PageIndexClient
         client = PageIndexClient(api_key=PAGEINDEX_API_KEY)
     except Exception:
         return []
