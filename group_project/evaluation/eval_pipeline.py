@@ -7,6 +7,7 @@ credentials are configured.
 
 import argparse
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -19,6 +20,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from src.task5_semantic_search import semantic_search
 from src.task9_retrieval_pipeline import retrieve
 from src.task10_generation import generate_with_citation
+from src.jina_embeddings import embed_texts
 
 GOLDEN_DATASET_PATH = Path(__file__).parent / "golden_dataset.json"
 RESULTS_PATH = Path(__file__).parent / "results.md"
@@ -94,7 +96,34 @@ def evaluate_with_ragas(golden_dataset: list[dict]):
     """Use the four required RAGAS metrics; requires working LLM judge credentials."""
     from datasets import Dataset
     from ragas import evaluate
-    from ragas.metrics import answer_relevancy, context_precision, context_recall, faithfulness
+    from ragas.llms import LangchainLLMWrapper
+    from ragas.metrics import AnswerRelevancy, ContextPrecision, ContextRecall, Faithfulness
+    from langchain_core.embeddings import Embeddings
+    from langchain_openai import ChatOpenAI
+
+    api_key = os.getenv("OPENROUTER_API_KEY")
+    if not api_key:
+        raise RuntimeError("OPENROUTER_API_KEY is required for the RAGAS judge run")
+
+    class JinaEmbeddings(Embeddings):
+        """RAGAS adapter reusing the project's Jina embedding API."""
+
+        def embed_documents(self, texts: list[str]) -> list[list[float]]:
+            return embed_texts(texts, task="retrieval.passage")
+
+        def embed_query(self, text: str) -> list[float]:
+            return embed_texts([text], task="retrieval.query")[0]
+
+    judge = LangchainLLMWrapper(
+        ChatOpenAI(
+            model=os.getenv("OPENROUTER_RAGAS_MODEL", "openrouter/free"),
+            api_key=api_key,
+            base_url="https://openrouter.ai/api/v1",
+            temperature=0,
+            max_retries=2,
+        )
+    )
+    embeddings = JinaEmbeddings()
 
     data = {"question": [], "answer": [], "contexts": [], "ground_truth": []}
     for item in golden_dataset:
@@ -103,7 +132,13 @@ def evaluate_with_ragas(golden_dataset: list[dict]):
         data["answer"].append(response["answer"])
         data["contexts"].append([source["content"] for source in response["sources"]])
         data["ground_truth"].append(item["expected_answer"])
-    return evaluate(Dataset.from_dict(data), metrics=[faithfulness, answer_relevancy, context_recall, context_precision])
+    metrics = [
+        Faithfulness(llm=judge),
+        AnswerRelevancy(llm=judge, embeddings=embeddings),
+        ContextRecall(llm=judge),
+        ContextPrecision(llm=judge),
+    ]
+    return evaluate(Dataset.from_dict(data), metrics=metrics)
 
 
 def export_results(comparison: dict, details: dict) -> None:
@@ -147,10 +182,13 @@ def export_results(comparison: dict, details: dict) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--ragas", action="store_true", help="run RAGAS LLM-judge metrics")
+    parser.add_argument("--limit", type=int, help="evaluate only the first N golden cases")
     args = parser.parse_args()
     dataset = load_golden_dataset()
     if len(dataset) < 15:
         raise ValueError("golden_dataset.json must contain at least 15 cases")
+    if args.limit:
+        dataset = dataset[:args.limit]
     if args.ragas:
         print(evaluate_with_ragas(dataset))
         return

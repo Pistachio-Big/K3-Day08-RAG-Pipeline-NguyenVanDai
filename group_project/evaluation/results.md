@@ -12,17 +12,17 @@
 | Metric | Config A: hybrid + RRF | Config B: dense-only | Delta A-B |
 |---|---:|---:|---:|
 | Faithfulness | 0.000 | 0.000 | +0.000 |
-| Answer Relevance | 0.468 | 0.458 | +0.010 |
+| Answer Relevance | 0.473 | 0.459 | +0.014 |
 | Context Recall | 1.000 | 1.000 | +0.000 |
-| Context Precision | 0.556 | 0.656 | -0.100 |
+| Context Precision | 0.567 | 0.644 | -0.078 |
 
 ## Worst retrieval cases — Config A
 
 | # | Question | Context recall | Context precision | Query-context relevance |
 |---|---|---:|---:|---:|
-| 1 | Lệ phí dự thi Đánh giá tư duy của Bách khoa Hà Nội là bao nhiêu? | 1.00 | 0.20 | 0.34 |
-| 2 | IELTS Academic 5.0 được quy đổi thế nào trong xét tuyển Bách khoa TP HCM năm 2025? | 1.00 | 0.20 | 0.36 |
-| 3 | Các tổ hợp A00, A01 và X06 của Trường Đại học Công nghệ gồm môn gì? | 1.00 | 0.20 | 0.54 |
+| 1 | IELTS Academic 5.0 được quy đổi thế nào trong xét tuyển Bách khoa TP HCM năm 2025? | 1.00 | 0.20 | 0.36 |
+| 2 | Các tổ hợp A00, A01 và X06 của Trường Đại học Công nghệ gồm môn gì? | 1.00 | 0.20 | 0.54 |
+| 3 | Trường Đại học Công nghệ dùng IELTS hoặc TOEFL iBT như thế nào khi xét tuyển? | 1.00 | 0.40 | 0.34 |
 
 ## Findings and next actions
 
