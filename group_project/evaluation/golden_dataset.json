@@ -1,17 +1,20 @@
 [
-  {
-    "question": "Học phí hàng năm của chương trình Business tại RMIT Vietnam là bao nhiêu?",
-    "expected_answer": "Khoảng 375.840.000 VND mỗi năm (tùy chương trình cụ thể).",
-    "expected_context": "Trang Tuition Fees, mục Undergraduate Programs"
-  },
-  {
-    "question": "Học phí được thanh toán theo hình thức nào?",
-    "expected_answer": "Thanh toán theo từng học kỳ, tính theo từng môn học đã đăng ký.",
-    "expected_context": "Trang Tuition Fees, mục Payment Structure"
-  },
-  {
-    "question": "Trường có cung cấp ký túc xá trong khuôn viên không?",
-    "expected_answer": "Không — trường không cung cấp chỗ ở trong khuôn viên, nhưng có đội ngũ hỗ trợ sinh viên tìm chỗ ở gần trường.",
-    "expected_context": "Trang Accommodation Services"
-  }
+  {"question":"Đại học Bách khoa Hà Nội có các phương thức tuyển sinh nào?","expected_answer":"Trường dùng xét tuyển tài năng, điểm Đánh giá tư duy, điểm thi tốt nghiệp THPT và các diện đặc biệt.","expected_context":"Bach-khoa-ha-noi.md"},
+  {"question":"Tổ hợp K01 của Đại học Bách khoa Hà Nội gồm những môn nào?","expected_answer":"K01 gồm Toán, Ngữ văn và một trong Lý, Hóa, Sinh hoặc Tin.","expected_context":"Bach-khoa-ha-noi.md"},
+  {"question":"IELTS tối thiểu cho chương trình tiên tiến bằng tiếng Anh tại Bách khoa Hà Nội là bao nhiêu?","expected_answer":"IELTS Academic từ 5.0 trở lên hoặc tương đương.","expected_context":"Bach-khoa-ha-noi.md"},
+  {"question":"Chương trình liên kết quốc tế TROY-IT tại Bách khoa Hà Nội yêu cầu IELTS bao nhiêu?","expected_answer":"IELTS Academic từ 5.5 trở lên.","expected_context":"Bach-khoa-ha-noi.md"},
+  {"question":"Phí đăng ký xét tuyển thẳng diện tài năng tại Bách khoa Hà Nội là bao nhiêu?","expected_answer":"200.000 đồng.","expected_context":"Bach-khoa-ha-noi.md"},
+  {"question":"Lệ phí dự thi Đánh giá tư duy của Bách khoa Hà Nội là bao nhiêu?","expected_answer":"500.000 đồng.","expected_context":"Bach-khoa-ha-noi.md"},
+  {"question":"Điểm chuẩn cao nhất của Bách khoa Hà Nội năm 2025 là bao nhiêu?","expected_answer":"29,39 điểm, thuộc chương trình Khoa học dữ liệu và Trí tuệ nhân tạo IT-E10.","expected_context":"article_02.md"},
+  {"question":"Học phí chương trình chuẩn của Bách khoa Hà Nội năm học 2025-2026 là bao nhiêu?","expected_answer":"Từ 14 đến 17,5 triệu đồng mỗi học kỳ.","expected_context":"article_02.md"},
+  {"question":"Quỹ học bổng khuyến khích học tập của Bách khoa Hà Nội năm 2025-2026 là bao nhiêu?","expected_answer":"Hơn 70 tỷ đồng.","expected_context":"article_02.md"},
+  {"question":"Trường Đại học Công nghệ ĐHQGHN có những phương thức xét tuyển nào năm 2026?","expected_answer":"Xét tuyển thẳng, điểm thi THPT, điểm HSA và chứng chỉ SAT.","expected_context":"Dai-hoc-cong-nghe.md"},
+  {"question":"Các tổ hợp A00, A01 và X06 của Trường Đại học Công nghệ gồm môn gì?","expected_answer":"A00 là Toán Lý Hóa; A01 là Toán Lý Anh; X06 là Toán Lý Tin.","expected_context":"Dai-hoc-cong-nghe.md"},
+  {"question":"Trường Đại học Công nghệ dùng IELTS hoặc TOEFL iBT như thế nào khi xét tuyển?","expected_answer":"Chứng chỉ có thể quy đổi thành điểm tiếng Anh hoặc dùng để cộng điểm khuyến khích.","expected_context":"Dai-hoc-cong-nghe.md"},
+  {"question":"Thời hạn nộp minh chứng HSA, SAT hoặc IELTS tại Trường Đại học Công nghệ năm 2026 là khi nào?","expected_answer":"Từ 10/5/2026 đến 17 giờ ngày 20/6/2026.","expected_context":"Dai-hoc-cong-nghe.md"},
+  {"question":"Trường Y Dược Cần Thơ được sử dụng tối đa bao nhiêu phương thức tuyển sinh?","expected_answer":"Tối đa 5 phương thức, không tính xét tuyển thẳng, cử tuyển và dự bị đại học.","expected_context":"Y-duoc-can-tho.md"},
+  {"question":"Ngưỡng nguồn tuyển theo ba môn THPT của Trường Y Dược Cần Thơ từ năm 2026 là bao nhiêu?","expected_answer":"Tối thiểu 15,00 điểm theo thang 30.","expected_context":"Y-duoc-can-tho.md"},
+  {"question":"IELTS Academic 5.0 được quy đổi thế nào trong xét tuyển Bách khoa TP HCM năm 2025?","expected_answer":"Được quy đổi thành 8 đến 10 điểm môn Tiếng Anh.","expected_context":"article_03.md"},
+  {"question":"Hạn xác nhận nhập học trực tuyến của HUS năm 2025 là khi nào?","expected_answer":"Trước 17 giờ ngày 30/8/2025.","expected_context":"article_04.md"},
+  {"question":"Điểm chuẩn ngành Khoa học máy tính của Ngoại thương năm 2025 là bao nhiêu?","expected_answer":"36,4 điểm do môn Toán nhân hệ số hai.","expected_context":"article_05.md"}
 ]
