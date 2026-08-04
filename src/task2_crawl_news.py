@@ -21,6 +21,9 @@ import json
 from datetime import datetime
 from pathlib import Path
 
+import requests
+from bs4 import BeautifulSoup
+
 DATA_DIR = Path(__file__).parent.parent / "data" / "landing" / "news"
 
 
@@ -29,15 +32,49 @@ def setup_directory():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
-# TODO: Điền danh sách URL bài viết cần crawl
 ARTICLE_URLS = [
-    # Ví dụ (trang công khai RMIT Vietnam):
     "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-cong-nghe-dhqg-ha-noi-nam-2025-119250822151451285.htm",
     "https://xaydungchinhsach.chinhphu.vn/diem-chuan-dai-hoc-bach-khoa-ha-noi-nam-2025-119250822165346027.htm",
     "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-tphcm-dhqg-tphcm-nam-2025-11925082220080899.htm",
     "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-khoa-hoc-tu-nhien-hus-dhqg-ha-noi-nam-2925-119250822173424001.htm",
     "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-ngoai-thuong-ftu-nam-2025-119250823073938701.htm",
 ]
+
+# A concise service directory can be shorter than a news article; 300 still
+# rejects error pages while retaining legitimate service pages.
+MIN_CONTENT_CHARS = 300
+
+
+def _extract_article_from_html(url: str) -> dict:
+    """Fetch and extract readable text; requests transparently decompresses gzip/br."""
+    response = requests.get(
+        url,
+        headers={"User-Agent": "Mozilla/5.0 (compatible; UniversityServicesRAG/1.0)"},
+        timeout=30,
+    )
+    response.raise_for_status()
+    response.encoding = response.encoding or response.apparent_encoding
+
+    soup = BeautifulSoup(response.text, "html.parser")
+    for element in soup(["script", "style", "noscript", "svg", "nav", "footer", "header"]):
+        element.decompose()
+
+    title = soup.find("h1")
+    title_text = title.get_text(" ", strip=True) if title else ""
+    if not title_text:
+        title_text = soup.title.get_text(" ", strip=True) if soup.title else "Unknown"
+
+    main_content = soup.find("main") or soup.find("article") or soup.body
+    content = main_content.get_text("\n", strip=True) if main_content else ""
+    if len(content) < MIN_CONTENT_CHARS:
+        raise ValueError(f"Nội dung trích xuất quá ngắn ({len(content)} ký tự)")
+
+    return {
+        "url": url,
+        "title": title_text,
+        "date_crawled": datetime.now().isoformat(),
+        "content_markdown": content,
+    }
 
 
 async def crawl_article(url: str) -> dict:
@@ -62,36 +99,9 @@ async def crawl_article(url: str) -> dict:
         if getattr(result, "metadata", None):
             title = result.metadata.get("title", "Unknown") or "Unknown"
 
-        content = getattr(result, "markdown", None) or ""
-        if not content and getattr(result, "raw_html", None):
-            content = result.raw_html
-
-        return {
-            "url": url,
-            "title": title,
-            "date_crawled": datetime.now().isoformat(),
-            "content_markdown": content or f"Không thể trích xuất nội dung từ: {url}",
-        }
-    except Exception:
-        import re
-        import urllib.request
-        from html import unescape
-
-        try:
-            with urllib.request.urlopen(url, timeout=20) as response:
-                html = response.read().decode("utf-8", errors="ignore")
-        except Exception:
-            html = ""
-
-        title_match = re.search(r"<title>(.*?)</title>", html, flags=re.IGNORECASE | re.DOTALL)
-        title = unescape(title_match.group(1)).strip() if title_match else "Unknown"
-
-        text = re.sub(r"<style.*?</style>", " ", html, flags=re.IGNORECASE | re.DOTALL)
-        text = re.sub(r"<script.*?</script>", " ", text, flags=re.IGNORECASE | re.DOTALL)
-        text = re.sub(r"<[^>]+>", "\n", text)
-        text = unescape(text)
-        text = re.sub(r"\s+", " ", text).strip()
-        content = text or f"Không thể trích xuất nội dung từ: {url}"
+        content = (getattr(result, "markdown", None) or "").strip()
+        if len(content) < MIN_CONTENT_CHARS:
+            raise ValueError("Crawl4AI trả về nội dung quá ngắn")
 
         return {
             "url": url,
@@ -99,6 +109,9 @@ async def crawl_article(url: str) -> dict:
             "date_crawled": datetime.now().isoformat(),
             "content_markdown": content,
         }
+    except Exception as crawl_error:
+        print(f"  ⚠ Crawl4AI failed ({crawl_error}); using requests fallback")
+        return await asyncio.to_thread(_extract_article_from_html, url)
 
 
 async def crawl_all():
@@ -107,15 +120,7 @@ async def crawl_all():
 
     for i, url in enumerate(ARTICLE_URLS, 1):
         print(f"[{i}/{len(ARTICLE_URLS)}] Crawling: {url}")
-        try:
-            article = await crawl_article(url)
-        except Exception as exc:
-            article = {
-                "url": url,
-                "title": "Unknown",
-                "date_crawled": datetime.now().isoformat(),
-                "content_markdown": f"Crawl failed: {exc}",
-            }
+        article = await crawl_article(url)
 
         filename = f"article_{i:02d}.json"
         filepath = DATA_DIR / filename

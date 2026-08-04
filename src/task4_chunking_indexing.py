@@ -32,7 +32,8 @@ trong cùng collection, retrieval sẽ trả về kết quả rác từ dữ li�
 
 from pathlib import Path
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from sentence_transformers import SentenceTransformer
+
+from .jina_embeddings import embed_texts
 
 STANDARDIZED_DIR = Path(__file__).parent.parent / "data" / "standardized"
 CHROMA_DIR = Path(__file__).parent.parent / "chroma_db"
@@ -48,8 +49,9 @@ CHUNK_OVERLAP = 50      # Giữ khoảng 10% nội dung giữa hai chunk để t
 CHUNKING_METHOD = "recursive"  # "recursive" | "markdown_header" | "semantic"
 
 
-# TODO: Chọn embedding model và giải thích
-EMBEDDING_MODEL = "BAAI/bge-m3"  # bge-m3 hỗ trợ đa ngôn ngữ, đặc biệt tiếng Việt và tiếng Anh, chất lượng retrieval cao.
+# Jina v3 chạy qua API nên không cần tải model/PyTorch local; hỗ trợ tiếng Việt
+# và có task adapter riêng cho passage retrieval.
+EMBEDDING_MODEL = "jina-embeddings-v3"
 EMBEDDING_DIM = 1024
 
 # TODO: Chọn vector store
@@ -180,18 +182,16 @@ def embed_chunks(chunks: list[dict]) -> list[dict]:
     # for chunk, emb in zip(chunks, embeddings):
     #     chunk["embedding"] = emb.tolist()
     # return chunks
-    model = SentenceTransformer(EMBEDDING_MODEL)
-
     texts = [c["content"] for c in chunks]
-
-    embeddings = model.encode(
+    embeddings = embed_texts(
         texts,
-        show_progress_bar=True,
-        normalize_embeddings=True,
+        model=EMBEDDING_MODEL,
+        task="retrieval.passage",
     )
 
     for chunk, emb in zip(chunks, embeddings):
-        chunk["embedding"] = emb.tolist()
+        # Jina API đã trả embedding dưới dạng list[float].
+        chunk["embedding"] = emb
 
     return chunks
 
@@ -223,6 +223,12 @@ def index_to_vectorstore(chunks: list[dict]):
     CHROMA_DIR.mkdir(parents=True, exist_ok=True)
 
     client = chromadb.PersistentClient(path=str(CHROMA_DIR))
+
+    # Changing embedding model invalidates vectors from a previous collection.
+    try:
+        client.delete_collection(COLLECTION_NAME)
+    except ValueError:
+        pass
 
     collection = client.get_or_create_collection(
         name=COLLECTION_NAME,

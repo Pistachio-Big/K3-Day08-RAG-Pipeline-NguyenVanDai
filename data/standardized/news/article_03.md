@@ -1,0 +1,109 @@
+# Điểm chuẩn Trường Đại học Bách khoa, ĐHQG TPHCM năm 2025
+
+**Source:** https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-tphcm-dhqg-tphcm-nam-2025-11925082220080899.htm
+**Crawled:** 2026-08-04T12:14:23.592307
+
+---
+
+Báo điện tử chính phủ
+Xây dựng chính sách, pháp luật
+Diễn đàn của nhân dân, doanh nghiệp về xây dựng, thực thi chính sách, pháp luật
+Chính sách mới
+Tham vấn chính sách
+Người dân góp ý
+Doanh nghiệp hiến kế
+Chính sách và cuộc sống
+Hướng dẫn thực hiện chính sách
+Phát triển kinh tế tư nhân và doanh nghiệp dân tộc
+Ocop và chuỗi giá trị Nông sản
+Kinh tế tư nhân
+Doanh nghiệp dân tộc
+Gửi thông tin góp ý hiến kế
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi tổng đài
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi đến
+0964 96 66 88
+tổng đài tiếp nhận các góp ý, đề xuất, hiến kế
+Hoặc
+Đóng
+Gửi thông tin góp ý hiến kế
+Điểm chuẩn Trường Đại học Bách khoa, ĐHQG TPHCM năm 2025
+(Chinhphu.vn) - Trường Đại học Bách khoa, Đại học Quốc gia TPHCM công bố điểm chuẩn theo phương thức xét tuyển tổng hợp năm 2025.
+Gọi tổng đài
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi đến
+0964 96 66 88
+tổng đài tiếp nhận các góp ý, đề xuất, hiến kế
+Hoặc
+Đóng
+Chính sách và cuộc sống
+Điểm chuẩn Trường Đại học Bách khoa, ĐHQG TPHCM năm 2025
+26/08/2025 08:08
+Chia sẻ
+(Chinhphu.vn) - Trường Đại học Bách khoa, Đại học Quốc gia TPHCM công bố điểm chuẩn theo phương thức xét tuyển tổng hợp năm 2025.
+Theo quy định, điểm xét tuyển được tính dựa trên 3 thành phần: điểm học lực, điểm cộng và điểm ưu tiên.
+Trong đó, điểm học lực có công thức tính riêng cho 8 đối tượng xét tuyển; điểm ưu tiên được xác định theo đối tượng và khu vực; còn điểm cộng được xét từ thành tích cá nhân, hoạt động xã hội, văn – thể – mỹ với mức tối đa 10 điểm trên thang 100.
+Điểm chuẩn Trường Đại học Bách khoa TPHCM
+Thí sinh có thể tra cứu chi tiết công thức tính điểm tại cổng tuyển sinh của Trường: hcmut.edu.vn/tuyen-sinh và kết quả điểm cộng tại MyBK.
+Trường cũng cho biết, trong kỳ tuyển sinh đại học chính quy 2025, gần 48% thí sinh đạt điểm thi đánh giá năng lực (ĐGNL) từ 900/1.200 trở lên.
+Đáng chú ý, gần 21% thí sinh đồng thời đạt trên 27 điểm thi Tốt nghiệp THPT và trên 900 điểm ĐGNL.
+Ngoài ra, khoảng 3.300 thí sinh sở hữu chứng chỉ tiếng Anh đạt chuẩn (tương đương IELTS Academic từ 5.0 trở lên) được quy đổi thành 8 – 10 điểm môn Tiếng Anh trong xét tuyển.
+Về thủ tục nhập học, từ 14h ngày 23/8, tân sinh viên có thể khai báo thông tin nhập học (sơ yếu lý lịch, học bạ THPT, hồ sơ ảnh…) và theo dõi lịch nhập học, lịch sinh hoạt công dân đầu khóa trên cổng MyBK.
+Trong hai ngày 25 - 26/8/2025, thí sinh sẽ trực tiếp làm thủ tục nhập học tại Hội quán BKA, cơ sở 1 (268 Lý Thường Kiệt, phường Diên Hồng, TPHCM). Thí sinh cần hoàn tất xác nhận nhập học trên hệ thống của Bộ GD&ĐT và thủ tục nhập học tại trường trước 17h ngày 30/8 để chính thức trở thành tân sinh viên khóa 2025.
+Tham khảo thêm
+ĐIỂM CHUẨN Trường Đại học Bách khoa, ĐHQG TPHCM 2024
+Tham khảo thêm
+Điểm chuẩn, tra cứu danh sách trúng tuyển Trường Đại học Bách khoa, ĐHQG TPHCM 2023
+Nội dung này, đã nhận được
+0
+góp ý, hiến kế
+Góp ý, hiến kế cho Chính phủ ngay tại đây
+Gọi tổng đài
+Góp ý qua Zalo
+Gửi góp ý trực tiếp
+Đọc nhiều
+Tra cứu ĐIỂM THI TỐT NGHIỆP THPT; PHỔ ĐIỂM; các mốc THỜI GIAN TUYỂN SINH ĐẠI HỌC 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - TRA CỨU ĐIỂM THI TỐT NGHIỆP THPT năm 2026 trên Báo điện tử Chính phủ, Cổng TTĐT Chính phủ từ 8h00 ngày 1/7. Tra cứu PHỔ ĐIỂM KỲ THI TỐT NGHỆP THPT năm 2026.
+Chi tiết PHỔ ĐIỂM KỲ THI TỐT NGHIỆP THPT 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Bộ Giáo dục và Đào tạo chính thức công bố phổ điểm Kỳ thi tốt nghiệp THPT năm 2026.
+QUY ĐỊNH MỚI về TIỀN LƯƠNG, LƯƠNG HƯU, TRỢ CẤP, PHỤ CẤP có hiệu lực từ tháng 7/2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Từ tháng 7/2026, nhiều quy định mới về tiền lương, lương hưu, trợ cấp, phụ cấp, chính sách xã hội chính thức có hiệu lực, được người dân mong chờ.
+BÁCH PHÂN VỊ các TỔ HỢP A00, A01, B00, C00, D01, Kỳ thi tốt nghiệp THPT 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Bách phân vị một số tổ hợp môn A00, A01, B00, C00, D01, Kỳ thi tốt nghiệp THPT năm 2026.
+TOÀN VĂN: Nghị quyết 57-NQ/TW về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia
+Chính sách và cuộc sống
+(Chinhphu.vn) - Tổng Bí thư Tô Lâm đã ký ban hành Nghị quyết số 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia. Cổng TTĐT Chính phủ trân trọng giới thiệu toàn văn Nghị quyết.
+Chúng tôi
+luôn
+Lắng nghe
+và phản hồi
+Người dân và Doanh nghiệp, ngay bây giờ có có thể thực hiện góp ý và hiến kế cho Chính Phủ bằng các phương thức dưới đây
+Gọi tổng đài
+Góp ý qua Zalo
+Gửi góp ý trực tiếp
+Chính sách mới
+Tham vấn chính sách
+Người dân góp ý
+Doanh nghiệp hiến kế
+Chính sách và cuộc sống
+Hướng dẫn thực hiện chính sách
+Phát triển kinh tế tư nhân và doanh nghiệp dân tộc
+Ocop và chuỗi giá trị Nông sản
+Kinh tế tư nhân
+Doanh nghiệp dân tộc
+Lấy ý kiến nhân dân dự thảo VBQPPL
+© BÁO ĐIỆN TỬ CHÍNH PHỦ
+Tổng Biên tập:
+Nguyễn Hồng Sâm
+Theo dõi trên:
+Giấy phép số: 19/GP-CBC, cấp ngày 10/5/2024.
+Trụ sở: 16 Lê Hồng Phong - Ba Đình - Hà Nội.
+Điện thoại: 080 43162; Fax: 080.48924;
+Email: thongtinchinhphu@chinhphu.vn.
+Bản quyền thuộc Báo Điện tử Chính phủ - Cổng Thông tin điện tử Chính phủ.
+Ghi rõ nguồn "Báo Điện tử Chính phủ", "Cổng Thông tin điện tử Chính phủ", hoặc www.baochinhphu.vn, www.chinhphu.vn khi phát hành lại thông tin từ các nguồn này.

@@ -1,0 +1,138 @@
+# Điểm chuẩn Đại học Bách khoa Hà Nội năm 2025
+
+**Source:** https://xaydungchinhsach.chinhphu.vn/diem-chuan-dai-hoc-bach-khoa-ha-noi-nam-2025-119250822165346027.htm
+**Crawled:** 2026-08-04T12:14:23.440832
+
+---
+
+Báo điện tử chính phủ
+Xây dựng chính sách, pháp luật
+Diễn đàn của nhân dân, doanh nghiệp về xây dựng, thực thi chính sách, pháp luật
+Chính sách mới
+Tham vấn chính sách
+Người dân góp ý
+Doanh nghiệp hiến kế
+Chính sách và cuộc sống
+Hướng dẫn thực hiện chính sách
+Phát triển kinh tế tư nhân và doanh nghiệp dân tộc
+Ocop và chuỗi giá trị Nông sản
+Kinh tế tư nhân
+Doanh nghiệp dân tộc
+Gửi thông tin góp ý hiến kế
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi tổng đài
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi đến
+0964 96 66 88
+tổng đài tiếp nhận các góp ý, đề xuất, hiến kế
+Hoặc
+Đóng
+Gửi thông tin góp ý hiến kế
+Điểm chuẩn Đại học Bách khoa Hà Nội năm 2025
+(Chinhphu.vn) - Đại học Bách khoa Hà Nội công bố điểm chuẩn xét tuyển đại học vào 65 chương trình đào tạo năm 2025, theo đó, mức điểm chuẩn dao động từ 19,00 đến 29,39 theo điểm thi tốt nghiệp THPT.
+Gọi tổng đài
+Chúng tôi luôn Lắng nghe và phản hồi
+Gọi đến
+0964 96 66 88
+tổng đài tiếp nhận các góp ý, đề xuất, hiến kế
+Hoặc
+Đóng
+Chính sách và cuộc sống
+Điểm chuẩn Đại học Bách khoa Hà Nội năm 2025
+26/08/2025 17:29
+Chia sẻ
+(Chinhphu.vn) - Đại học Bách khoa Hà Nội công bố điểm chuẩn xét tuyển đại học vào 65 chương trình đào tạo năm 2025, theo đó, mức điểm chuẩn dao động từ 19,00 đến 29,39 theo điểm thi tốt nghiệp THPT.
+Theo PGS. Vũ Duy Hải – Trưởng Ban Tuyển sinh – Hướng nghiệp, Đại học Bách khoa Hà Nội, tính tới thời điểm 16h00 chiều nay, công tác lọc ảo của nhóm xét tuyển miền Bắc do Đại học Bách khoa Hà Nội chủ trì đã hoàn thành nhiệm vụ theo quy trình chung.
+Mặc dù năm nay có nhiều điểm mới trong công tác tuyển sinh, dẫn tới phát sinh nhiều kỹ thuật tính toán và dữ liệu cần phải xử lý trên hệ thống so với năm 2024, tuy nhiên kết quả lọc ảo đã được thực hiện đồng bộ, chính xác và bàn giao cho các trường trong nhóm theo đúng thời hạn quy định của Bộ Giáo dục và Đào tạo.
+TIN LIÊN QUAN
+ĐIỂM CHUẨN Đại học Bách Khoa Hà Nội những năm gần đây
+TUYỂN SINH 2026: Lịch thi ĐÁNH GIÁ TƯ DUY (TSA) của ĐẠI HỌC BÁCH KHOA Hà Nội
+Đại học Bách khoa Hà Nội tuyển sinh 2026
+Về điểm chuẩn trúng tuyển vào các chương trình đào tạo của Đại học Bách khoa Hà Nội khá sát so với mức Nhà trường đã dự báo, đặc biệt đối với các ngành top dưới. Với các ngành top trên thì điểm chuẩn cao hơn khoảng 1 điểm so với dự báo.
+Chương trình tiên tiến Khoa học dữ liệu và Trí tuệ nhân tạo (IT-E10) có điểm chuẩn cao nhất là 29,39 điểm theo điểm thi tốt nghiệp THPT. Tiếp theo là Chương trình Khoa học máy tính (IT1) có điểm chuẩn là 29,19 điểm.
+Các ngành “hot” đều có điểm chuẩn rất cao như Chương trình Kỹ thuật Điều khiển - Tự động hoá (EE2) có điểm chuẩn là 28,48 điểm; Chương trình Kỹ thuật Vi điện tử và Công nghệ nano (MS2) có điểm chuẩn là 28,25; Chương trình Kỹ thuật Điện tử - Viễn thông (ET1) có điểm chuẩn là 28,07 điểm.
+Chương trình có điểm chuẩn thấp nhất năm nay là TROY-BA với mức điểm là 19,00 điểm theo điểm thi tốt nghiệp THPT.
+Chi tiết điểm chuẩn trúng tuyển vào các chương trình đào tạo của Đại học Bách khoa Hà Nội năm 2025 như sau:
+Độ lệch điểm giữa các tổ hợp xét tuyển
+Căn cứ theo hướng dẫn chung của Bộ Giáo dục và Đào tạo và phổ điểm thi tốt nghiệp trung học phổ thông (THPT) năm 2025, Đại học Bách khoa Hà Nội đã công bố độ lệch điểm giữa các tổ hợp xét tuyển theo phương thức sử dụng điểm thi tốt nghiệp THPT như sau:
+Theo đó, đối với các tổ hợp sử dụng để xét tuyển vào khối nhóm ngành kỹ thuật bao gồm A00, A01, A02, B00, D07, D26, D28, D29 và K01 sẽ không có độ lệch điểm. Các tổ hợp sử dụng để xét tuyển vào khối nhóm ngành kinh tế, giáo dục, ngoại ngữ bao gồm D01 và D04 cũng không có độ lệch điểm. Độ lệch điểm giữa các tổ hợp xét tuyển vào khối nhóm ngành kỹ thuật (A00, A01, A02, B00, D07, D26, D28, D29 và K01) và các tổ hợp sử dụng để xét tuyển vào khối nhóm ngành kinh tế, giáo dục, ngoại ngữ (D01 và D04) là +0.5 điểm vào mức điểm chuẩn khi xét cùng vào một chương trình đào tạo đối với các tổ hợp A00, A01, A02, B00, D07, D26, D28, D29 và K01.
+Ví dụ minh họa: Chương trình FL3-Tiếng Trung Khoa học và Công nghệ đang xét tuyển với 3 tổ hợp điểm tốt nghiệp THPT là K01, D01 và D04. Điểm trúng tuyển theo tổ hợp D01 đang là 24,86 điểm thì điểm trúng tuyển theo tổ hợp D04 vẫn là 24,86 điểm, còn điểm trúng tuyển theo tổ hợp K01 sẽ là 25,36 điểm.
+Hoặc Chương trình EM3-Quản trị kinh doanh đang xét tuyển với 4 tổ hợp điểm tốt nghiệp THPT là K01, A00, A01 và D01. Điểm trúng tuyển theo tổ hợp D01 đang là 24,30 điểm thì điểm trúng tuyển theo các tổ hợp K01, A00 và A01 sẽ là 24,80 điểm.
+Các bậc phụ huynh và thí sinh có thể tra cứu thêm về các mức quy đổi điểm chuẩn tương đương cho năm 2025 của Đại học Bách khoa Hà Nội tại đây:
+https://tsbkhn.shinyapps.io/QuyDoi-2025BK
+Năm học 2025-2026, học phí các chương trình chuẩn tại Đại học Bách khoa Hà Nội từ 14-17,5 triệu đồng/học kỳ. Đối với các chương trình Elitech, học phí từ 17,5-22,5 triệu đồng/học kỳ. Các chương trình song bằng, hợp tác quốc tế có mức từ 25,5-30 triệu đồng/học kỳ. Riêng 2 chương trình Khoa học dữ liệu và Trí tuệ nhân tạo (IT-E10) và Logistics và Quản lý chuỗi cung ứng (EM-E14) giữ ổn định mức học phí từ 32-33,5 triệu đồng/học kỳ.
+Đại học Bách khoa Hà Nội có nhiều nguồn học bổng dành cho sinh viên. Năm học 2025-2026,  Nhà trường tiếp tục dành hơn 70 tỷ đồng làm Quỹ học bổng khuyến khích học tập (KKHT) cho những sinh viên có kết quả học tập và rèn luyện tốt. Riêng với sinh viên có hoàn cảnh khó khăn, các em đặc biệt có nhiều cơ hội tiếp cận các nguồn học bổng giá trị: Học bổng KKHT, học bổng Trần Đại Nghĩa, học bổng doanh nghiệp.
+Điểm chuẩn được xác định dựa trên điểm xét (ĐX) như sau:
+a) Điểm xét tuyển theo kết quả Kỳ thi tốt nghiệp THPT năm 2025 với tổ hợp môn không có môn chính, thang điểm 30:
+ĐX = [(Môn 1+ Môn 2 + Môn 3)] + Điểm ưu tiên1
+b) Điểm xét tuyển theo kết quả Kỳ thi tốt nghiệp THPT năm 2025 với tổ hợp môn có môn chính, thang điểm 30:
+ĐX = [(Môn 1 + Môn 2 + Môn 3 + Môn chính) x 3/4 ] + Điểm ưu tiên1
+c) Điểm xét tuyển theo kết quả Kỳ thi tốt nghiệp THPT năm 2025 với tổ hợp K01, thang điểm 30:
+ĐX = [(Toán x 3 + Ngữ Văn x 1 + Lý/Hóa/Sinh/Tin x 2) x 1/2 ] + Điểm ưu tiên1
+d) Điểm xét tuyển theo kết quả Kỳ thi Đánh giá tư duy (ĐGTD) năm 2024 hoặc 2025, tổ hợp K00, thang điểm 100:
+ĐX = Điểm thi ĐGTD2 + Điểm ưu tiên3 + Điểm thưởng4
+e) Điểm xét tuyển theo phương thức XTTN diện 1.2 (Chứng chỉ quốc tế) và 1.3 (Hồ sơ năng lực kết hợp phỏng vấn), thang điểm 100:
+ĐX = Điểm XTTN + Điểm ưu tiên3
+Điểm xét được làm tròn đến 2 chữ số thập phân sau dấu phẩy.
+-----------------------------
+1) Điểm ưu tiên đối tượng, ưu tiên khu vực theo Quy chế tuyển sinh đại học, cao đẳng ngành giáo dục Mầm non (Ban hành kèm theo thông tư số 08/2022/TT-BGDĐT ngày 06 tháng 6 năm 2022 của Bộ trưởng Bộ Giáo dục và Đào tạo và Thông tư số 06/2025/TT-BGDĐT ngày 19 tháng 3 năm 2025 của Bộ trưởng Bộ Giáo dục và Đào tạo về việc sửa đổi, bổ sung một số điều của Quy chế tuyển sinh đại học, tuyển sinh cao đẳng ngành Giáo dục Mầm non).
+(2) Điểm thi ĐGTD là điểm cao nhất trong các lần thi ĐGTD năm 2024 và 2025.
+(3) Điểm ưu tiên đối tượng, khu vực quy về thang điểm 100.
+(4) Điểm thưởng đối với thí sinh có chứng chỉ IELTS (academic) hoặc tương đương, theo Quy chế tuyển sinh đại học của ĐHBK Hà Nội (Ban hành kèm theo Quyết định số 5919/QĐ-ĐHBK ngày 10 tháng 6 năm 2025 của Giám đốc Đại học Bách khoa Hà Nội.
+Quy chế tuyển sinh đại học của ĐHBK Hà Nội (Ban hành kèm theo Quyết định số 5919/QĐ-ĐHBK ngày 10 tháng 6 năm 2025 của Giám đốc Đại học Bách khoa Hà Nội.
+Tham khảo thêm
+ĐIỂM CHUẨN Đại học Bách Khoa Hà Nội 2024
+Tham khảo thêm
+Chi tiết điểm chuẩn ĐẠI HỌC BÁCH KHOA HÀ NỘI năm 2023
+Nội dung này, đã nhận được
+0
+góp ý, hiến kế
+Góp ý, hiến kế cho Chính phủ ngay tại đây
+Gọi tổng đài
+Góp ý qua Zalo
+Gửi góp ý trực tiếp
+Đọc nhiều
+Tra cứu ĐIỂM THI TỐT NGHIỆP THPT; PHỔ ĐIỂM; các mốc THỜI GIAN TUYỂN SINH ĐẠI HỌC 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - TRA CỨU ĐIỂM THI TỐT NGHIỆP THPT năm 2026 trên Báo điện tử Chính phủ, Cổng TTĐT Chính phủ từ 8h00 ngày 1/7. Tra cứu PHỔ ĐIỂM KỲ THI TỐT NGHỆP THPT năm 2026.
+Chi tiết PHỔ ĐIỂM KỲ THI TỐT NGHIỆP THPT 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Bộ Giáo dục và Đào tạo chính thức công bố phổ điểm Kỳ thi tốt nghiệp THPT năm 2026.
+QUY ĐỊNH MỚI về TIỀN LƯƠNG, LƯƠNG HƯU, TRỢ CẤP, PHỤ CẤP có hiệu lực từ tháng 7/2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Từ tháng 7/2026, nhiều quy định mới về tiền lương, lương hưu, trợ cấp, phụ cấp, chính sách xã hội chính thức có hiệu lực, được người dân mong chờ.
+BÁCH PHÂN VỊ các TỔ HỢP A00, A01, B00, C00, D01, Kỳ thi tốt nghiệp THPT 2026
+Chính sách và cuộc sống
+(Chinhphu.vn) - Bách phân vị một số tổ hợp môn A00, A01, B00, C00, D01, Kỳ thi tốt nghiệp THPT năm 2026.
+TOÀN VĂN: Nghị quyết 57-NQ/TW về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia
+Chính sách và cuộc sống
+(Chinhphu.vn) - Tổng Bí thư Tô Lâm đã ký ban hành Nghị quyết số 57-NQ/TW ngày 22/12/2024 của Bộ Chính trị về đột phá phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia. Cổng TTĐT Chính phủ trân trọng giới thiệu toàn văn Nghị quyết.
+Chúng tôi
+luôn
+Lắng nghe
+và phản hồi
+Người dân và Doanh nghiệp, ngay bây giờ có có thể thực hiện góp ý và hiến kế cho Chính Phủ bằng các phương thức dưới đây
+Gọi tổng đài
+Góp ý qua Zalo
+Gửi góp ý trực tiếp
+Chính sách mới
+Tham vấn chính sách
+Người dân góp ý
+Doanh nghiệp hiến kế
+Chính sách và cuộc sống
+Hướng dẫn thực hiện chính sách
+Phát triển kinh tế tư nhân và doanh nghiệp dân tộc
+Ocop và chuỗi giá trị Nông sản
+Kinh tế tư nhân
+Doanh nghiệp dân tộc
+Lấy ý kiến nhân dân dự thảo VBQPPL
+© BÁO ĐIỆN TỬ CHÍNH PHỦ
+Tổng Biên tập:
+Nguyễn Hồng Sâm
+Theo dõi trên:
+Giấy phép số: 19/GP-CBC, cấp ngày 10/5/2024.
+Trụ sở: 16 Lê Hồng Phong - Ba Đình - Hà Nội.
+Điện thoại: 080 43162; Fax: 080.48924;
+Email: thongtinchinhphu@chinhphu.vn.
+Bản quyền thuộc Báo Điện tử Chính phủ - Cổng Thông tin điện tử Chính phủ.
+Ghi rõ nguồn "Báo Điện tử Chính phủ", "Cổng Thông tin điện tử Chính phủ", hoặc www.baochinhphu.vn, www.chinhphu.vn khi phát hành lại thông tin từ các nguồn này.
