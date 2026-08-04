@@ -8,6 +8,8 @@ sdk_version: "1.35.0"
 app_file: app.py
 pinned: false
 ---
+**NHÓM FUNNY**
+
 | Họ và tên | MSSV |
 |---|---|
 | Nguyễn Huy Anh | 2A202601641 |
