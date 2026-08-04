@@ -32,8 +32,11 @@ def setup_directory():
 # TODO: Điền danh sách URL bài viết cần crawl
 ARTICLE_URLS = [
     # Ví dụ (trang công khai RMIT Vietnam):
-    # "https://www.rmit.edu.vn/libraryvn/...",
-    # "https://www.rmit.edu.vn/students/...",
+    "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-cong-nghe-dhqg-ha-noi-nam-2025-119250822151451285.htm",
+    "https://xaydungchinhsach.chinhphu.vn/diem-chuan-dai-hoc-bach-khoa-ha-noi-nam-2025-119250822165346027.htm",
+    "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-bach-khoa-tphcm-dhqg-tphcm-nam-2025-11925082220080899.htm",
+    "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-khoa-hoc-tu-nhien-hus-dhqg-ha-noi-nam-2925-119250822173424001.htm",
+    "https://xaydungchinhsach.chinhphu.vn/diem-chuan-truong-dai-hoc-ngoai-thuong-ftu-nam-2025-119250823073938701.htm",
 ]
 
 

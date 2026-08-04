@@ -8,6 +8,7 @@ venv/
 
 # Env (keys)
 .env
+requirements.txt
 
 # Temp PDF conversion cache
 data/_tmp_pdf/
